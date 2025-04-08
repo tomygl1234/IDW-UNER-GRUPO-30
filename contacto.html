@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Contacto</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="/institucional.html">Institucional</a>
-          </li>
-          <li>
-            <a href="/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 
-    <h2>Bienvenidos Contacto</h2>
-    <br>
-    <footer>
-      <h3>Contacto</h3>
-      <p>Dirección: San Martín 123, Salta</p>
-      <p>Email: contacto@idwsa.com</p>
-      <p>Teléfono: (+54) 387-4035140</p>
-      <p>IDW S.A TODOS LOS DERECHOS RESERVADOS</p>
-    </footer>
-  </body>
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="/institucional.html">Institucional</a>
+        </li>
+        <li>
+          <a href="/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <h2>Contacto</h2>
+    <p>¡Nos encantaría saber de vos! Completá el siguiente formulario:</p>
+  </header>
+  <br />
+  <section>
+    <h3>Formulario de contacto</h3>
+
+    <form action="https://formsubmit.co/contacto@idwsa.com" method="POST">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+      </div>
+      <br />
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" placeholder="Ingrese su correo" required>
+      </div>
+      <br />
+      <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" rows="5" required></textarea>
+      </div>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <br>
+  <footer>
+    <h3>Contacto</h3>
+    <p>Dirección: San Martín 123, Salta</p>
+    <p>Email: contacto@idwsa.com</p>
+    <p>Teléfono: (+54) 387-4035140</p>
+    <p>IDW S.A TODOS LOS DERECHOS RESERVADOS</p>
+  </footer>
+</body>
+
 </html>
