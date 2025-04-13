@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <title>Contacto</title>
+  </head>
 
-  <title>Contacto</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="/index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="/institucional.html">Institucional</a>
-        </li>
-        <li>
-          <a href="/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+  <body>
+    <header class="header">
+      <div class="menu_contenedor contenedor">
+        <div class="logo_contenedor">
+          <a class="logo" href="/index.html">IDW</a>
+          <div class="logo-slogan">
+            <p>EVENTOS & FIESTAS</p>
+            <p>Donde el sueño se vuelve realidad</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="/index.html" class="link">Inicio</a>
+            </li>
+            <li>
+              <a href="/institucional.html" class="link">Institucional</a>
+            </li>
+            <li>
+              <a href="/contacto.html" class="link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <br />
-    <h2>Contacto</h2>
-    <p>¡Nos encantaría saber de vos! Completá el siguiente formulario:</p>
-  </header>
-  <br />
-  <section>
-    <h3>Formulario de contacto</h3>
+    <section class="section">
+      <div class="contenedor contenido_contacto_contenedor">
+        <div class="form_contenedor">
+          <form action="https://formsubmit.co/tomasgimenezlascano123@gmail.com" method="POST">
+            <h3>Formulario de contacto</h3>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ingrese su nombre"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="email">Correo electrónico:</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Ingrese su correo"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" rows="5" required placeholder="Ej: Quisiera contactarlos para organizar la fiesta de 15 de mi hija"></textarea>
+            </div>
+            <br />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
 
-    <form action="https://formsubmit.co/contacto@idwsa.com" method="POST">
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+        <div class="contacto_map_contenedor">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.042820786547!2d-65.40748862384712!3d-24.79398720803269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a21b573ca3%3A0xa02f5b22c3baef52!2sAv.%20San%20Mart%C3%ADn%20123%2C%20A4400%20Salta%2C%20Argentina!5e0!3m2!1ses!2sit!4v1744582059255!5m2!1ses!2sit"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
       </div>
-      <br />
-      <div>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" name="email" placeholder="Ingrese su correo" required>
+    </section>
+    <br />
+    <footer class="footer">
+      <div class="contenedor footer_section contenedor_padding">
+        <h3 class="footer_section_titulo">Contacto</h3>
+        <div class="footer_section_contenido">
+          <p>Dirección: San Martín 123, Salta</p>
+          <p>Email: contacto@idwsa.com</p>
+          <p>Teléfono: (+54) 387-4035140</p>
+          <p>IDW S.A TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
       </div>
-      <br />
-      <div>
-        <label for="mensaje">Mensaje:</label>
-        <textarea name="mensaje" rows="5" required></textarea>
-      </div>
-      <br />
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-  <br>
-  <footer>
-    <h3>Contacto</h3>
-    <p>Dirección: San Martín 123, Salta</p>
-    <p>Email: contacto@idwsa.com</p>
-    <p>Teléfono: (+54) 387-4035140</p>
-    <p>IDW S.A TODOS LOS DERECHOS RESERVADOS</p>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
