@@ -7,4 +7,5 @@
 #### Integrantes  
 - **Tomás Francisco Giménez Lascano**  
 - **Sebastian Puchetti**  
-- **Juan Ignacio Zacca**  
+- **Juan Ignacio Zacca**
+- **Daniel Hernandez Torres**
